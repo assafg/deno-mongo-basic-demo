@@ -1,0 +1,21 @@
+version: "2.1"
+
+services:
+  service:
+    build: .
+    depends_on: 
+      - mongo
+    environment: 
+      - PORT=8000
+    ports: 
+      - 9999:8000
+
+  mongo:
+    image: mongo
+    volumes:
+      - ${PWD}/mongo-data:/data/db'
+    ports:
+      - 27017:27017
+    
+    
+      
