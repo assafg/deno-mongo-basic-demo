@@ -1,5 +1,5 @@
 import { Application, Router } from 'https://deno.land/x/oak/mod.ts';
-import { MongoClient, ObjectId } from 'https://deno.land/x/mongo@v0.7.0/mod.ts';
+import { MongoClient, ObjectId } from 'https://deno.land/x/mongo@v0.13.0/mod.ts';
 
 const client = new MongoClient();
 client.connectWithUri('mongodb://mongodb:27017');
